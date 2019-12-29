@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1a41a6606b.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="java.js" async></script>
+    <title>Nervilamp</title>
+</head>
+
+<body>
+
+    <!--  header  -->
+
+    <header class="pt-4 justify-content-center">
+
+        <div class="row px-0 mx-0">
+            <!-- logo -->
+            <img class="ml-4 pl-3" src="http://www.nervilamp.com/wp-content/uploads/2016/10/logo_210x90px.png" alt="Logo">
+
+            <div class="col-10 ml-5 mt-2 col-md-8 ml-md-2 col-lg-9 col-xl-9 pr-xl-0 mt-md-5 text-center text-md-right">
+                <a class="px-2 text-nowrap link_decoration btn" data-toggle="modal" data-target="#exampleModalCenter1" href=""><i class="fas fa-headset mr-1 icon_color"></i> +39-0331-552556</a>
+
+                <!-- Modal call -->
+                <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title modal_title_col" id="exampleModalLongTitle1">Call menu:</h5>
+                                <button type="button" class="close text-danger" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body row mx-0">
+                                <button type="button" class="btn text-uppercase col-5 mx-3 btn_cell_bg" data-toggle="modal" data-target="#exampleModalCenter2">Auto call</button>
+                                <button type="button" class="btn text-uppercase col-5 mx-3 ml-4 btn_cell_bg2"> Call now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal auto call -->
+
+                <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title modal_title_col" id="exampleModalLongTitle2">Auto call:</h5>
+                                <button type="button" class="close text-danger" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="row justify-content-center">
+                                        <div class="col-7">
+                                            <input type="text" class="form-control" placeholder="name" required pattern="[A-Za-zА-Яа-яЁё]{2,}">
+                                        </div>
+                                        <div class="col-7 my-2">
+                                            <input type="text" class="form-control" placeholder="country" required pattern="[A-Za-zА-Яа-яЁё]{2,}">
+                                        </div>
+                                        <div class="col-7">
+                                            <input type="text" class="form-control" placeholder="tel: +_ _ (_ _ _) _ _  _ _  _ _ _" required pattern="\+38\[0-9][0-9][0-9]\[0-9][0-9]\[0-9][0-9]\[0-9][0-9][0-9]">
+                                        </div>
+                                        <div class="text-center col-7 col-md-6 mt-2 pt-3 border-top">
+                                            <button type="submit" class="btn btn_cell_bg2 px-5">Submit</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="px-2 border-dark border-left border-right text-nowrap link_decoration" data-toggle="modal" data-target="#exampleModalCenter3" href=""><i class="fas fa-envelope mr-1 icon_color"></i> info@nervilamp.com</a>
+
+                <!-- send a letter -->
+
+                <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title modal_title_col" id="exampleModalLongTitle3">
+                                    Letter to Nervilamp</h5>
+                                <button type="button" class="close text-danger" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Email address:</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1" value="info@nervilamp.com" disabled>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">Your appeal:</label>
+                                        <textarea required class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+
+                                    <div class="text-right mt-2 pt-3 border-top">
+                                        <button type="submit" class="btn btn_cell_bg2 px-5">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="px-2 text-nowrap link_decoration" data-toggle="modal" data-target="#exampleModalCenter4" href=""><i class="fas fa-unlock-alt mr-1 icon_color"></i> sing in</a>
+
+                <!-- sing in -->
+
+                <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title modal_title_col" id="exampleModalLongTitle4">Your office:</h5>
+                                <button type="button" class="close text-danger" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+
+                                <form>
+                                    <div class="row justify-content-center">
+                                        <div class="col-6">
+                                            <input type="email" class="form-control" placeholder="login" required>
+                                        </div>
+                                        <div class="col-6">
+                                            <input type="password" class="form-control" placeholder="password" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*">
+                                        </div>
+
+                                        <div class="text-center col-7 mt-2 pt-3 border-top">
+                                            <button type="submit" class="btn btn_cell_bg2 px-5">Sing in</button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- nav -->
+
+    <div class="px-3 px-sm-5 justify-content-center ficsed_nav">
+
+        <div class="row px-0">
+
+            <nav class="col-12 col-sm-12 navbar navbar-expand-md navbar-light d-flex justify-content-end mt-1 mt-md-0">
+
+                <button class="navbar-toggler nav_button_color" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse mt-md-4" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav nav-list_decor mt-2 mt-sm-0">
+
+                        <li class="nav-item">
+                            <a class="px-2 navigation d-flex flex-nowrap text-uppercase link_decoration2" href="index.html">
+                                <p class="mb-0">Home</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="px-2 navigation d-flex flex-nowrap text-uppercase link_decoration2 active" href="collections.html">
+                                <p class="mb-0">Collections</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="px-2 navigation d-flex flex-nowrap text-uppercase link_decoration2" href="company.html">
+                                <p class="mb-0">Company</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="px-2 navigation d-flex flex-nowrap text-uppercase link_decoration2" href="distribution.html">
+                                <p class="mb-0">Distribution</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="px-2 navigation d-flex flex-nowrap text-uppercase link_decoration2" href="contact.html">
+                                <p class="mb-0">Domain</p>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+    <!--  collections page  -->
+
+    <!-- section1 -->
+
+    <div class="container-fluid bg_1">
+
+    </div>
+
+    <!--  section2  -->
+
+    <div class="custom_made_products">
+
+        <div class="py-4 text-light">
+            <h4 class="text-center">CUSTOM-MADE PRODUCTS</h4>
+            <hr class="line_prod">
+        </div>
+
+        <div class="justify-content-center col-12">
+
+        <h6 class="text-center font-weight-lighter text-light prod_text">
+            The most exclusive lighting dreams are made possible through classic and contemporary decor with the highly personalised products in our catalogue.
+        </h6>
+
+        </div>
+
+        <div class="row mx-0 mt-5 justify-content-center pb-5">
+
+              <div class="row mx-0 col-10 mx-3 col-md-5 px-0 text-center mt-5 mt-md-0">
+
+               <div class="col-5 pr-0 text-right">
+
+                <img class="custom_img" style="position: relative; z-index: 1" src="http://www.nervilamp.com/wp-content/uploads/2016/10/icona_catalogo.png" width="100" alt="">
+
+                </div>
+
+                <div class="col-7 text-left">
+
+                <p class="text-left text-light text-uppercase">NERVILAMP CATALOGUE</p>
+
+                <small class="d-blok text-light">REGISTER for our reserved area and download the catalogue in pdf format.</small>
+
+                </div>
+
+            </div>
+
+            <div class="row mx-0 col-10 mx-3 col-md-5 px-0 justify-content-center mt-5 mt-md-0">
+
+               <div class="col-5 pr-0 text-right">
+
+                <img class="custom_img" style="position: relative; z-index: 1" src="http://www.nervilamp.com/wp-content/uploads/2016/10/icona_installazione.png" width="100" alt="">
+
+                </div>
+
+                <div class="col-7 text-left">
+
+                <p class="text-light text-uppercase">INSTALLATION</p>
+
+                <small class="d-blok text-light">REGISTER for our reserved area, download the pdf and view
+                the installation instructions for electrical connections.</small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--  collections  -->
+
+    <div class="collections">
+
+        <div class="bg_maps py-4 border border-dark">
+            <h4 class="text-center text_color">OUR COLLECTIONS</h4>
+            <hr class="line_maps">
+        </div>
+
+        <div class="collections_img row mx-0 justify-content-center">
+
+        <img class="collections_jevelery col-12 px-0 col-md-6 py-md-1 px-md-1 col-lg-4" src="Examination-img./img2196_10477.jpg" width="300" height="400" alt="">
+        <img class="collections_jevelery col-12 px-0 col-md-6 py-md-1 px-md-1 col-lg-4 mt-4 mt-md-0" src="Examination-img./img4836_10736.jpg" width="300" height="400" alt="">
+        <img class="collections_jevelery col-12 px-0 col-md-6 py-md-1 px-md-1 col-lg-4 mt-4 mt-md-0" src="Examination-img./A8-5-ANTIQUE-SILVER.jpg" width="300" height="400" alt="">
+        <img class="collections_jevelery col-12 px-0 col-md-6 py-md-1 px-md-1 col-lg-4 mt-4 mt-md-0" src="Examination-img./e71f6dec1eb6f650ec58308da089.jpg" width="300" height="400" alt="">
+        <img class="collections_jevelery col-12 px-0 col-md-6 py-md-1 px-md-1 col-lg-4 mt-4 mt-md-0" src="Examination-img./940-12+6-sil.jpg" width="300" height="400" alt="">
+        <img class="collections_jevelery col-12 px-0 col-md-6 py-md-1 px-md-1 col-lg-4 mt-4 mt-md-0" src="Examination-img./%D0%9F%D0%BE%D0%B4%D1%81%D0%B2%D0%B5%D1%82%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%2001052%20GOLD%20BRONZE%20DEC,%20Nervilamp.jpg" width="300" height="400" alt="">
+
+        </div>
+
+        <div class="py-4 border border-dark">
+
+           <h5 class="text-left text-dark mx-5">Guarantee of Made in Italy Quality</h5>
+
+            <p class="text-left text-dark mx-5">We put passion and pride in what we do.<br>
+            We start with an idea by master craftsmen,<br> who are capable
+            of bringing form and an ease of use together in the production process,<br>
+            in order to create refined and elegant lines.<br>
+            Nervilamp is a guarantee of quality and excellence
+            in the field of interior lighting.</p>
+
+        </div>
+
+    </div>
+
+    <!--  footer  -->
+
+    <footer class="container-fluid pt-4 mt-0 justify-content-center footer_style">
+
+        <img class="logo ml-3" src="http://www.nervilamp.com/wp-content/uploads/2016/09/img_logo_nervilamp.png" width="150" alt=""><br>
+
+        <div class="row px-0 mx-0">
+
+            <div class="col-12 mt-3 col-sm-4 text-right text-sm-left mb-4">
+
+                <small class="d-block text-light">Nervilamp Srl</small><br>
+                <small class="d-block text-light my-n4">Via S. Maria 18</small><br>
+                <small class="d-block text-light">20014 Nerviano MILANO Italy</small>
+            </div>
+
+            <div class="col-12 col-sm-8 mt-sm-3 mb-3 text-center text-lg-right">
+                <a class="px-2 text-nowrap link_footer" data-toggle="modal" data-target="#exampleModalCenter1" href=""><i class="fas fa-headset mr-1 text-light icon_footer"></i> +39-0331-552556</a>
+                <a class="px-2 border-left border-right text-nowrap link_footer" data-toggle="modal" data-target="#exampleModalCenter3" href=""><i class="fas fa-envelope mr-1 text-light icon_footer"></i> info@nervilamp.com</a>
+                <a class="px-2 text-nowrap link_footer" data-toggle="modal" data-target="#exampleModalCenter4" href=""><i class="fas fa-unlock-alt mr-1 text-light icon_footer"></i> sing in</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body></html>

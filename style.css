@@ -1,0 +1,403 @@
+/*header*/
+
+body {
+    background-color: #e6e6e6;
+}
+
+.link_decoration {
+    color: black;
+}
+
+.link_decoration:hover {
+    font-size: 15px;
+    transition: all 0.2s ease;
+    color: #393939;
+}
+
+.icon_color {
+    color: darkgrey;
+    font-size: 20px;
+}
+
+.link_decoration:hover .icon_color  {
+    color: #651e1e;
+}
+
+.modal_title_col {
+    color: #651e1e;
+}
+
+.btn_cell_bg {
+    background-color: rgba(255, 155, 142, 0.64);
+}
+
+.btn_cell_bg:hover {
+    background-color: rgb(240, 79, 58);
+    box-shadow: 3px 3px 2px 2px #651e1e;
+}
+
+.btn_cell_bg2 {
+    background-color: rgba(117, 255, 202, 0.47);
+}
+
+.btn_cell_bg2:hover {
+    background-color: rgba(72, 216, 83, 0.89);
+    box-shadow: 3px 3px 2px 2px rgba(31, 96, 36, 0.89);
+}
+
+.ficsed_nav {
+    position: sticky;
+    top: 0;
+    background-color: rgba(230, 230, 230, 0.76);
+    border-bottom: 10px solid #651e1e;
+    z-index: 2;
+}
+
+.ficsed_nav:hover {
+    background-color: rgb(230, 230, 230);
+    transition: all 0.3s ease;
+}
+
+.nav_button_color {
+    background-color: #e6e6e6;
+}
+
+.nav_button_color:hover {
+    background-color: rgba(132, 20, 20, 0.63);
+    border: 2px solid #651e1e;
+}
+
+.link_decoration2 {
+    color: #651e1e;
+}
+
+.link_decoration2:hover {
+    color: black;
+    box-shadow: -5px 2px 10px 2px rgba(21, 1, 1, 0.35);
+    letter-spacing: 3px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.active {
+    color: #696767;
+}
+
+
+/*----------home page----------*/
+
+/*carousel*/
+
+.carousel_slider{
+    position: relative;
+    z-index: 3;
+}
+
+.slider_title {
+    color: #651e1e;
+}
+
+.slider_title2 {
+    color: #9cfae1;
+}
+
+
+/*producing*/
+
+.bg_prod_img {
+    background-image: url(https://nuwallpaperhd.info/wp-content/uploads/2018/01/Red-Simply-Background-Wallpaper.jpg);
+    min-height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.line_prod {
+    max-width: 50px;
+    border: 1px solid #ffffff;
+}
+
+.prod_text {
+    word-wrap: normal;
+}
+
+.custom_img_bord {
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 50%;
+}
+
+/* craftsmanship */
+
+.photos {
+    background-color: #b2b2b2;
+}
+
+.img_container {
+    width: 280px;
+    height: 255px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img_container:hover {
+    width: 270px;
+    height: 245px;
+    color: black;
+    box-shadow: -15px 15px 10px 2px rgba(21, 1, 1, 0.35);
+    letter-spacing: 3px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    border: 1px solid rgba(36, 36, 36, 0.65);
+    cursor: pointer;
+}
+
+.img_container2 {
+    width: 280px;
+    height: 295px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img_container2:hover {
+    width: 270px;
+    height: 290px;
+    color: black;
+    box-shadow: -15px 15px 10px 2px rgba(21, 1, 1, 0.35);
+    letter-spacing: 3px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    border: 1px solid rgba(36, 36, 36, 0.65);
+    cursor: pointer;
+}
+
+.img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    z-index: 0;
+}
+
+
+/* mini-nav */
+
+.mini_nav {
+    background-color: #b2b2b2;
+}
+
+.img_container2 {
+    width: 280px;
+    height: 295px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img_container2:hover {
+    width: 270px;
+    height: 290px;
+    color: black;
+    box-shadow: -15px 15px 10px 2px rgba(21, 1, 1, 0.35);
+    letter-spacing: 3px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    border: 1px solid rgba(36, 36, 36, 0.65);
+}
+
+
+/* maps */
+
+.bg_maps {
+    background-color: #e6e6e6;
+}
+
+.text_color {
+    color: #651e1e;
+}
+
+.line_maps {
+    max-width: 50px;
+    border: 1px solid #651e1e;
+}
+
+/*---------------------collections page---------------------------*/
+
+/* section1 */
+
+.bg_1 {
+    background-image: url(Examination-img./lyustra_nervilamp_snc_nervilamp_2013_2081_9_st_large.jpg);
+    min-height: 500px;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* section2 */
+
+.custom_made_products {
+    background-image: url(http://www.apppublishers.org/wp-content/uploads/2017/11/maxresdefault.jpg);
+    background-size: cover;
+}
+
+.custom_img:hover {
+    cursor: pointer;
+}
+
+/* collections */
+
+.collections_img {
+    background-color: #651e1e;
+}
+
+.collections_jevelery:hover {
+    cursor: pointer;
+}
+
+
+/*--------------------- company page ----------------------*/
+
+.bg_2 {
+    background-image: url(http://www.nervilamp.com/wp-content/uploads/2016/10/header_1-1.jpg?id=15073);
+    min-height: 500px;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*section2*/
+
+.hands_head_heart_bg {
+    background-image: url(http://www.apppublishers.org/wp-content/uploads/2017/11/maxresdefault.jpg);
+    background-size: cover;
+}
+
+.line_custom_made {
+    max-width: 50px;
+    min-height: 2px;
+    background-color: aliceblue;
+    padding: 0px;
+    margin: 0px;
+}
+
+.bg_luxury {
+    background-color: #e6e6e6;
+}
+
+.line_custom_made2 {
+    max-width: 50px;
+    min-height: 2px;
+    background-color: #651e1e;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*------------------- distribution page -------------------*/
+
+/*section1*/
+
+.bg_img {
+    background-image: url(Examination-img./distridution_img.png);
+    min-height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*section2*/
+
+.bg_img_2 {
+    background-image: url(http://www.mptest.cloud/nervilamp/wp-content/uploads/2016/09/img_foglie_sfondo_2-2.png?id=14924);
+    min-height: 300px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #e8e4e4;
+    margin-right: 10px;
+}
+
+.text_position {
+    padding-top: 160px;
+}
+
+.img_position {
+    margin-top: 100px;
+}
+
+/*section3*/
+
+.bg_s3 {
+    background-color: #651e1e;
+}
+
+.list_decoration {
+    list-style: none;
+}
+
+/*section4*/
+
+.bg_s4 {
+    background-image: url(https://images.homify.com/images/a_0,c_fill,f_auto,h_900,q_auto,w_1920/v1521197916/p/photo/image/2480167/2/klassicheskiy-gostinaya-photos-in-yantarnyy-zolotoy-by-comelite-architecture-structure-and-interior-design.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    min-height: 700px;
+}
+
+/*--------------------------- conyact page ------------------------*/
+
+/*section forms*/
+
+textarea {
+    overflow: auto;
+    resize: none;
+    width: 500px;
+    height: 50px;
+}
+
+.btn_send_color {
+    background-color: rgba(216, 216, 216, 0.14);
+    border: 1px solid #535353;
+}
+
+.btn_send_color:hover {
+    background-color: rgba(132, 20, 20, 0.63);
+    box-shadow: 3px 3px 2px 2px black;
+    color: aliceblue;
+    border: 2px solid #651e1e;
+}
+
+/*footer*/
+
+.footer_style {
+    background-image: url(https://images7.alphacoders.com/351/351342.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.link_footer {
+    color: aliceblue;
+}
+
+.link_footer:hover {
+    color: #c1bcb9;
+    text-decoration: none;
+}
+
+
+
+
+/*---------------------media---------------------*/
+
+@media screen and (max-width: 992px) {
+    .img_position {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .img_position {
+        position: absolute;
+        left: 40%;
+    }
+}

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1a41a6606b.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="java.js" async></script>
+    <title>Nervilamp</title>
+</head>
+
+<body>
+
+    <!--  header  -->
+
+    <header class="pt-4 justify-content-center">
+
+        <div class="row px-0 mx-0">
+            <!-- logo -->
+            <img class="ml-4 pl-3" src="http://www.nervilamp.com/wp-content/uploads/2016/10/logo_210x90px.png" alt="Logo">
+
+            <div class="col-10 ml-5 mt-2 col-md-8 ml-md-2 col-lg-9 col-xl-9 pr-xl-0 mt-md-5 text-center text-md-right">
+                <a class="px-2 text-nowrap link_decoration btn" data-toggle="modal" data-target="#exampleModalCenter1" href=""><i class="fas fa-headset mr-1 icon_color"></i> +39-0331-552556</a>
+
+                <!-- Modal call -->
+                <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title modal_title_col" id="exampleModalLongTitle1">Call menu:</h5>
+                                <button type="button" class="close text-danger" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body row mx-0">
+                                <button type="button" class="btn text-uppercase col-5 mx-3 btn_cell_bg" data-toggle="modal" data-target="#exampleModalCenter2">Auto call</button>
+                                <button type="button" class="btn text-uppercase col-5 mx-3 ml-4 btn_cell_bg2"> Call now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal auto call -->
+
+                <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title modal_title_col" id="exampleModalLongTitle2">Auto call:</h5>
+                                <button type="button" class="close text-danger" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="row justify-content-center">
+                                        <div class="col-7">
+                                            <input type="text" class="form-control" placeholder="name" required pattern="[A-Za-zА-Яа-яЁё]{2,}">
+                                        </div>
+                                        <div class="col-7 my-2">
+                                            <input type="text" class="form-control" placeholder="country" required pattern="[A-Za-zА-Яа-яЁё]{2,}">
+                                        </div>
+                                        <div class="col-7">
+                                            <input type="text" class="form-control" placeholder="tel: +_ _ (_ _ _) _ _  _ _  _ _ _" required pattern="\+38\[0-9][0-9][0-9]\[0-9][0-9]\[0-9][0-9]\[0-9][0-9][0-9]">
+                                        </div>
+                                        <div class="text-center col-7 col-md-6 mt-2 pt-3 border-top">
+                                            <button type="submit" class="btn btn_cell_bg2 px-5">Submit</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="px-2 border-dark border-left border-right text-nowrap link_decoration" data-toggle="modal" data-target="#exampleModalCenter3" href=""><i class="fas fa-envelope mr-1 icon_color"></i> info@nervilamp.com</a>
+
+                <!-- send a letter -->
+
+                <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title modal_title_col" id="exampleModalLongTitle3">
+                                    Letter to Nervilamp</h5>
+                                <button type="button" class="close text-danger" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Email address:</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1" value="info@nervilamp.com" disabled>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">Your appeal:</label>
+                                        <textarea required class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+
+                                    <div class="text-right mt-2 pt-3 border-top">
+                                        <button type="submit" class="btn btn_cell_bg2 px-5">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="px-2 text-nowrap link_decoration" data-toggle="modal" data-target="#exampleModalCenter4" href=""><i class="fas fa-unlock-alt mr-1 icon_color"></i> sing in</a>
+
+                <!-- sing in -->
+
+                <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title modal_title_col" id="exampleModalLongTitle4">Your office:</h5>
+                                <button type="button" class="close text-danger" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+
+                                <form>
+                                    <div class="row justify-content-center">
+                                        <div class="col-6">
+                                            <input type="email" class="form-control" placeholder="login" required>
+                                        </div>
+                                        <div class="col-6">
+                                            <input type="password" class="form-control" placeholder="password" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*">
+                                        </div>
+
+                                        <div class="text-center col-7 mt-2 pt-3 border-top">
+                                            <button type="submit" class="btn btn_cell_bg2 px-5">Sing in</button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- nav -->
+
+    <div class="px-3 px-sm-5 justify-content-center ficsed_nav">
+
+        <div class="row px-0">
+
+            <nav class="col-12 col-sm-12 navbar navbar-expand-md navbar-light d-flex justify-content-end mt-1 mt-md-0">
+
+                <button class="navbar-toggler nav_button_color" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse mt-md-4" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav nav-list_decor mt-2 mt-sm-0">
+
+                        <li class="nav-item">
+                            <a class="px-2 navigation d-flex flex-nowrap text-uppercase link_decoration2" href="index.html">
+                                <p class="mb-0">Home</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="px-2 navigation d-flex flex-nowrap text-uppercase link_decoration2" href="collections.html">
+                                <p class="mb-0">Collections</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="px-2 navigation d-flex flex-nowrap text-uppercase link_decoration2" href="company.html">
+                                <p class="mb-0">Company</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="px-2 navigation d-flex flex-nowrap text-uppercase link_decoration2" href="distribution.html">
+                                <p class="mb-0">Distribution</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="px-2 navigation d-flex flex-nowrap text-uppercase link_decoration2 active" href="contact.html">
+                                <p class="mb-0">Domain</p>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+    <!--  maps  -->
+
+    <div class="mb-n2">
+
+        <iframe class="container-fluid px-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.0322370893605!2d8.956508298363687!3d45.54967703900257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786ed3441b73523%3A0xa1c3898eb9e0698c!2sNervilamp%20S.r.l.!5e0!3m2!1sru!2sua!4v1576104474643!5m2!1sru!2sua" width="600" height="450" allowfullscreen=""></iframe>
+
+    </div>
+
+    <!--  section forms  -->
+
+    <div class="row mx-0 py-4 justify-content-center">
+
+        <div class="col-11 col-md-5 px-0 mb-5">
+
+            <h5 class="text-uppercase text_color">Our office</h5>
+
+            <p class="font-weight-lighter">Via S. Maria 18
+            20014 Nerviano MI
+            ITALY</p>
+
+            <p class="font-weight-lighter">TEL: +39 0331 552566 | +39 0331 587614
+            FAX: +39 0331 553372</p>
+
+            <p class="font-weight-lighter">MAIL: info@nervilamp.com</p>
+
+        </div>
+
+        <div class="col-11 col-md-5 px-0">
+
+            <h5 class="text-uppercase text_color">CONTACT US</h5>
+
+            <div class="row mx-0">
+
+                <form class="row px-0">
+              <div class="form-group col-6">
+
+                <input type="text" class="form-control" placeholder="*Name" required>
+
+              </div>
+              <div class="form-group col-6">
+
+                <input type="text" class="form-control" placeholder="*Surname" required>
+              </div>
+
+              <div class="form-group col-6">
+
+                <input type="text" class="form-control" placeholder="*Company Name" required>
+              </div>
+
+              <div class="form-group col-6">
+
+                <input type="text" class="form-control" placeholder="Phone" required>
+              </div>
+
+              <div class="form-group col-6">
+
+                <input type="text" class="form-control" placeholder="Fax">
+              </div>
+
+              <div class="form-group col-6">
+
+                <input type="email" class="form-control" placeholder="*Email" required>
+              </div>
+
+              <div class="form-group col-12">
+
+                <textarea placeholder="Message" class="form-control" rows="3"></textarea>
+
+              </div>
+
+              <div class="col-12 text-right">
+              <button type="submit" class="btn btn_send_color">SEND</button>
+            </div>
+            </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--  footer  -->
+
+    <footer class="container-fluid pt-4 mt-0 justify-content-center footer_style">
+
+        <img class="logo ml-3" src="http://www.nervilamp.com/wp-content/uploads/2016/09/img_logo_nervilamp.png" width="150" alt=""><br>
+
+        <div class="row px-0 mx-0">
+
+            <div class="col-12 mt-3 col-sm-4 text-right text-sm-left mb-4">
+
+                <small class="d-block text-light">Nervilamp Srl</small><br>
+                <small class="d-block text-light my-n4">Via S. Maria 18</small><br>
+                <small class="d-block text-light">20014 Nerviano MILANO Italy</small>
+            </div>
+
+            <div class="col-12 col-sm-8 mt-sm-3 mb-3 text-center text-lg-right">
+                <a class="px-2 text-nowrap link_footer" data-toggle="modal" data-target="#exampleModalCenter1" href=""><i class="fas fa-headset mr-1 text-light icon_footer"></i> +39-0331-552556</a>
+                <a class="px-2 border-left border-right text-nowrap link_footer" data-toggle="modal" data-target="#exampleModalCenter3" href=""><i class="fas fa-envelope mr-1 text-light icon_footer"></i> info@nervilamp.com</a>
+                <a class="px-2 text-nowrap link_footer" data-toggle="modal" data-target="#exampleModalCenter4" href=""><i class="fas fa-unlock-alt mr-1 text-light icon_footer"></i> sing in</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body></html>
