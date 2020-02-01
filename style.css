@@ -230,7 +230,7 @@ body {
 /* section1 */
 
 .bg_1 {
-    background-image: url();
+    background-image: url(Examination-img./lyustra_nervilamp_snc_nervilamp_2013_2081_9_st_large.jpg);
     min-height: 500px;
     background-position: bottom;
     background-size: cover;
@@ -242,6 +242,10 @@ body {
 .custom_made_products {
     background-image: url(http://www.apppublishers.org/wp-content/uploads/2017/11/maxresdefault.jpg);
     background-size: cover;
+}
+
+.font_size2{
+    font-size: 14px;
 }
 
 .custom_img:hover {
