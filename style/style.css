@@ -2,6 +2,7 @@
 
 body {
     background-color: #e6e6e6;
+    font-family: sans-serif;
 }
 
 .link_decoration {
@@ -108,6 +109,10 @@ body {
     min-height: 500px;
     background-repeat: no-repeat;
     background-size: cover
+}
+
+.font_size{
+    font-size: 15px;
 }
 
 .line_prod {
@@ -225,7 +230,7 @@ body {
 /* section1 */
 
 .bg_1 {
-    background-image: url(Examination-img./lyustra_nervilamp_snc_nervilamp_2013_2081_9_st_large.jpg);
+    background-image: url();
     min-height: 500px;
     background-position: bottom;
     background-size: cover;
