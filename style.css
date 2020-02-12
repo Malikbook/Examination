@@ -142,16 +142,32 @@ body {
     overflow: hidden;
 }
 
+.img_text{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-54%,-50%);
+    width: 250px;
+    height: 255px;
+    margin-left: 11px;
+    color: aliceblue;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.63);
+    display: none;
+    padding-top: 25px;
+}
+
+.img_container:hover + .img_text{
+    display: block;
+}
+
+.img_text:hover{
+    display: block;
+    transform: 0.5s all;
+}
+
 .img_container:hover {
-    width: 270px;
-    height: 245px;
     color: black;
-    box-shadow: -15px 15px 10px 2px rgba(21, 1, 1, 0.35);
-    letter-spacing: 3px;
-    transition: all 0.2s ease;
-    text-decoration: none;
-    border: 1px solid rgba(36, 36, 36, 0.65);
-    cursor: pointer;
 }
 
 .img_container2 {
@@ -250,6 +266,9 @@ body {
 
 .custom_img:hover {
     cursor: pointer;
+    background-color: #ac2007;
+    border-radius: 50%;
+    transition: 0.2s all;
 }
 
 /* collections */
@@ -374,6 +393,29 @@ textarea {
     border: 2px solid #651e1e;
 }
 
+/*---------------------distribution------------------------*/
+
+.distr_name:hover{
+    cursor: pointer;
+    font-size: 17px;
+    transform: 0,5s all;
+    position: relative;
+
+}
+
+.scil{
+    margin-left: 15px;
+    display: none;
+}
+
+.distr_name:hover + .scil{
+    display: inline-block;
+    position: absolute;
+    left: 30%;
+    font-size: 18px;
+}
+
+
 /*footer*/
 
 .footer_style {
@@ -403,9 +445,58 @@ textarea {
     }
 }
 
+@media screen and (min-width: 992px) {
+    .scil{
+    margin-left: 35px;
+    display: none;
+}
+
+    .distr_name:hover + .scil{
+        display: inline-block;
+        position: absolute;
+        left: 100%;
+        font-size: 18px;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .img_position {
         position: absolute;
         left: 40%;
+    }
+    .scil{
+    margin-left: 15px;
+    display: none;
+}
+
+    .distr_name:hover + .scil{
+        display: inline-block;
+        position: absolute;
+        left: 70%;
+        font-size: 18px;
+    }
+
+    .img_text{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-54%,-50%);
+    width: 280px;
+    height: 255px;
+    margin-left: 25px;
+    color: aliceblue;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.63);
+    display: none;
+    padding-top: 25px;
+    padding-right: 25px;
+}
+
+    .img_container:hover + .img_text{
+        display: none;
+    }
+
+    .img_text:hover{
+        display: none;
     }
 }
