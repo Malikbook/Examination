@@ -411,7 +411,7 @@ textarea {
 .distr_name:hover + .scil{
     display: inline-block;
     position: absolute;
-    left: 30%;
+    left: 40%;
     font-size: 18px;
 }
 
