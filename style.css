@@ -411,8 +411,9 @@ textarea {
 .distr_name:hover + .scil{
     display: inline-block;
     position: absolute;
-    left: 40%;
+    left: 60%;
     font-size: 18px;
+    margin-left: 15px;
 }
 
 
@@ -472,7 +473,7 @@ textarea {
     .distr_name:hover + .scil{
         display: inline-block;
         position: absolute;
-        left: 70%;
+        left: 50%;
         font-size: 18px;
     }
 
@@ -500,3 +501,22 @@ textarea {
         display: none;
     }
 }
+
+@media screen and (min-width: 500px) {
+    .distr_name:hover + .scil{
+        display: inline-block;
+        position: absolute;
+        left: 40%;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 630px) {
+    .distr_name:hover + .scil{
+        display: inline-block;
+        position: absolute;
+        left: 30%;
+        font-size: 18px;
+    }
+}
+
